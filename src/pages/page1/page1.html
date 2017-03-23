@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <!--<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>-->
+        <ion-title>Login Page</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="mainpagestyle">
+    <h4>Welcome Content to be Added</h4>
+    <h6 style="color:#9e9e9e">The Content Should be replaced with the Original one</h6>
+    <ion-grid>
+        <ion-row>
+            <ion-col col>
+                <img src="../images/security1.jpg" class="leftimagestyle" />
+            </ion-col>
+            <ion-col col>
+
+                <ion-buttons end>
+                    <button ion-button item-right icon-right color="primary" (click)="createacc()">Sign-Up
+                    <ion-icon name="send" ></ion-icon> 
+                    </button>
+                </ion-buttons>
+
+                <ion-card class="cardstyle">
+                    <br>
+                    <ion-card-header>
+                        Sign In to your Account&nbsp;
+                        <ion-icon name="log-in"></ion-icon>
+                    </ion-card-header>
+                    <ion-list style="padding:5%">
+                        <ion-item>
+                            <ion-label floating>Customer-ID</ion-label>
+                            <ion-input type="text" class="textboxstyle"></ion-input>
+                        </ion-item>
+                        <br>
+                        <ion-item>
+                            <ion-label floating>PIN</ion-label>
+                            <ion-input type="number" class="textboxstyle"></ion-input>
+                        </ion-item>
+                        <br>
+                        <ion-item padding>
+                            <button ion-button block icon-right class="centerbutton" color="primary" (click)="gotodash()">Sign-In
+                              <ion-icon name="send" ></ion-icon>
+                            </button>
+                        </ion-item>
+                        <ion-grid>
+                            <ion-row class="labelstyle">
+                                <ion-col col>
+                                </ion-col>
+                                <ion-col col>
+                                    <a href="#" color="danger">User id?</a>
+                                </ion-col>
+                                <ion-col col>
+                                    <a href="#" color="danger"> Password?</a>
+                                </ion-col>
+                                <ion-col col>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-list>
+                    <br>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,82 @@
+<ion-menu [content]="content" side="right">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+        </ion-list>
+        <!--<ion-card>
+            <ion-card-header style="background: #81d4fa;">
+                Explore Nearby
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label floating>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <br>
+        </ion-card>
+        <ion-card>
+            <ion-card-header style="background: #81d4fa;">
+                Explore Nearby
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label floating>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <br>
+        </ion-card>
+        <ion-card>
+            <ion-card-header style="background: #81d4fa;">
+                Explore Nearby
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label floating>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <br>
+        </ion-card>
+        <ion-card>
+            <ion-card-header style="background: #81d4fa;">
+                Explore Nearby
+            </ion-card-header>
+            <ion-list>
+                <ion-item>
+                    <ion-label floating>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <br>
+        </ion-card>-->
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
