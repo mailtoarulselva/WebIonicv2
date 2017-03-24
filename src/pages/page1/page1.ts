@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import { ModalController } from 'ionic-angular';
 import { Page3 } from '../page3/page3';
 import { Page2 } from '../page2/page2';
+import { Page4 } from '../page4/page4';
 
 @Component({
   selector: 'page-page1',
@@ -23,7 +24,7 @@ export class Page1 {
     this.navCtrl.push(Page2);
   }
   presentModal() {
-    let modal = this.modalCtrl.create(Page3);
+    let modal = this.modalCtrl.create(Page4);
     modal.present();
   }
 

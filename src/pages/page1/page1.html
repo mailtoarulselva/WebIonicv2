@@ -16,13 +16,11 @@
                 <img src="../images/security1.jpg" class="leftimagestyle" />
             </ion-col>
             <ion-col col>
-
                 <ion-buttons end>
                     <button ion-button item-right icon-right color="primary" (click)="createacc()">Sign-Up
                     <ion-icon name="send" ></ion-icon> 
                     </button>
                 </ion-buttons>
-
                 <ion-card class="cardstyle">
                     <br>
                     <ion-card-header>
@@ -41,7 +39,7 @@
                         </ion-item>
                         <br>
                         <ion-item padding>
-                            <button ion-button block icon-right class="centerbutton" color="primary" (click)="gotodash()">Sign-In
+                            <button ion-button block icon-right class="centerbutton" color="primary" (click)="gotodash()" style="padding:4%;font-size:medium;">Sign-In
                               <ion-icon name="send" ></ion-icon>
                             </button>
                         </ion-item>
@@ -53,7 +51,7 @@
                                     <a href="#" color="danger">User id?</a>
                                 </ion-col>
                                 <ion-col col>
-                                    <a href="#" color="danger"> Password?</a>
+                                    <a href="#" color="danger" (click)="presentModal()"> Password?</a>
                                 </ion-col>
                                 <ion-col col>
                                 </ion-col>
